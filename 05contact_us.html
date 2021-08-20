@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+	<head>
+		<title>SNU - NMR laboratory</title>
+		<meta charset="utf-8" >
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" >
+		<meta name = "viewport" content = "width = device-width, initial-scale = 1, maximum-scale = 1, user-scalable = 0, viewport-fit=cover">
+		
+		<!-- CDN :: js -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" referrerpolicy="no-referrer"></script>
+		<!-- //CDN :: js -->
+	
+		<!-- CDN :: swiper -->
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css" />
+		<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+		<script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+		<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		<!-- //CDN :: swiper -->
+	
+		<!-- CDN :: fontawesome -->
+		<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+		<!-- //CDN :: fontawesome -->
+	
+		<script type="text/javascript" src="./js/common.js"></script>
+		<!-- common area : css -->
+		<link rel="stylesheet" href="./css/common.css">
+		<link rel="stylesheet" href="./css/layout.css">
+		<link rel="stylesheet" href="./css/board.css">
+		<!--// common area : css -->
+	
+	
+	</head>
+<body>
+<div id="wrap" class="sub-area">
+	<div id="skipNavi">
+		<a href="#container">본문 바로가기</a>
+		<a href="#gnb">주메뉴 바로가기</a>
+		<a href="#footer">사이트 정보 바로가기</a>
+	</div>
+	<!-- header -->
+	<header id="header">
+		<div class="inner">
+			<h1 id="logo"><a href="./index.html"><img src="./img/logo.png" alt="MDA" /></a></h1>
+			<p>NMR Laboratory of  Seoul National University</p>
+			<div id="gnb" class=""> <!-- open toggle -->
+				<div class="inner">
+					<nav>
+						<li><h2><a href="./index.html">HOME</a></h2></li>
+						<li><h2><a href="./01research.html">RESEARCH</a></h2></li>
+						<li><h2><a href="./02members.html">MEMBERS</a></h2></li>
+						<li><h2><a href="./03publications.html">PUBLICATIONS</a></h2></li>
+						<li><h2><a href="./04pulse_programs.html">PULSE PROGRAMS</a></h2></li>
+						<li class="on"><h2><a href="./05contact_us.html">CONTACT US</a></h2></li>
+					</nav>
+				</div>
+			</div>
+
+			<button class="lnb-menu"><span class="blind">전체메뉴</span><i></i></button>
+		</div>
+	</header>
+	<!-- //header -->
+
+	<!-- contents -->
+	<article id="container">
+		<div class="inner">
+			<h3><span>CONTACT</span></h3>
+			
+			<!-- 지도를 표시할 div 입니다 -->
+			<div id="map"></div>
+
+			<article class="location-info-box">
+				<div class="in">
+					<ul class="location-info-list">
+						<li>
+							<dl class="clearfix">
+								<dt>
+									<span class="icon"><i class="fas fa-map-marked-alt"></i></span>
+									<strong class="tit">Address</strong>
+								</dt>
+								<dd><p class="txt">Bldg. 503 Rm. 324, Seoul National University, Seoul 08826, Korea</p></dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt>
+									<span class="icon"><i class="fas fa-phone-alt"></i></span>
+									<strong class="tit">TEL</strong>
+								</dt>
+								<dd><p class="txt">+82-2-880-4363</p></dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt>
+									<span class="icon"><i class="far fa-envelope"></i></span>
+									<strong class="tit">E-mail</strong>
+								</dt>
+								<dd><p class="txt"><a href="mailto:jungho.lee@snu.ac.kr">mailto:jungho.lee@snu.ac.kr</a></p></dd>
+							</dl>
+						</li>
+						<li>
+							<dl class="clearfix">
+								<dt>
+									<span class="icon"><i class="fas fa-user-check"></i></span>
+									<strong class="tit">Open Positions</strong>
+								</dt>
+								<dd><p class="txt">1) Graduate Students (Ph. D. and M. S.)<br>
+									2) Postdoctoral Fellows
+									</p></dd>
+							</dl>
+						</li> 
+					</ul>
+					<a href="https://goo.gl/maps/AsCwdgBLEVmKovXP8" target="_blank" class="location-btn"><span>Go to Google Map</span></a>
+				</div>
+			</article>
+			
+			<!-- 지도 관련 js -->
+			<div id="clickLatlng"></div>
+			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=74cdc2b1365c7309052bd00976441b37&libraries=services"></script>
+			<script>
+				var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+					mapOption = {
+						center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+						level: 4 // 지도의 확대 레벨
+					};  
+
+					// 지도를 생성합니다    
+					var map = new kakao.maps.Map(mapContainer, mapOption); 
+
+					// 주소-좌표 변환 객체를 생성합니다
+					var geocoder = new kakao.maps.services.Geocoder();
+
+					// 주소로 좌표를 검색합니다
+					geocoder.addressSearch('서울특별시 관악구 관악로 1', function(result, status) {
+
+						// 정상적으로 검색이 완료됐으면 
+						if (status === kakao.maps.services.Status.OK) {					
+
+							var coords = new kakao.maps.LatLng(result[0].y, result[0].x);
+							var message = 'latlng: new kakao.maps.LatLng(' + result[0].y + ', ';
+							message += result[0].x + ')';
+							
+							var resultDiv = document.getElementById('clickLatlng'); 											
+							// 결과값으로 받은 위치를 마커로 표시합니다
+							var marker = new kakao.maps.Marker({
+								map: map,
+								position: coords
+							});
+
+							// 인포윈도우로 장소에 대한 설명을 표시합니다
+							var infowindow = new kakao.maps.InfoWindow({
+								content: '<div style="width:150px;text-align:center;padding:6px 0;">NMR Laboratory</div>'
+							});
+							infowindow.open(map, marker);
+
+							// 지도의 중심을 결과값으로 받은 위치로 이동시킵니다
+							map.setCenter(coords);
+						} 
+							
+					});    
+			</script>
+		</div>
+
+	</article>
+	<!-- //contents -->
+
+	<!-- footer -->
+	<footer id="footer">
+		<div class="inner"><copyright>NMR Lab. @ Seoul National University, Korea</copyright></div>
+	</footer>
+	<!-- //footer -->
+</div>
+
+</body>
+</html>

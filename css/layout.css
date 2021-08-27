@@ -108,7 +108,8 @@
     vertical-align: middle;
     border: 3px solid #37a084;}
 
-.subvisual {background: url('../img/bg-forest.jpg') no-repeat center 0%;background-size: cover;height:300px;margin-bottom: 40px;position: relative;}
+.subvisual {height:300px;overflow:hidden;margin-bottom: 40px;position: relative;}
+.subvisual img {width: 100%;}
 .tit-disc {margin-bottom: 10px;font-size: 18px;font-weight: bold;}
 .tit-disc + .disc {font-size: 16px;line-height:1.8;}
 .tit-disc + .disc + .disc-img {text-align: center;padding:5% 0 10%;}

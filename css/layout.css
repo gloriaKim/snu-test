@@ -22,11 +22,11 @@
 #header .user-sec li a.mypage {background-image:url('../img/main/icon-my.png');}
 #header #gnb {border-top:1px solid #e5e5e5;}
 #header #gnb>.inner {}
-#header #gnb nav {display:flex;justify-content: space-evenly;}
+#header #gnb nav {display:flex;justify-content: space-evenly;    background: #eae4df;}
 #header #gnb nav li {}
 #header #gnb nav li a {position:relative;line-height:60px;font-size:18px;color:#000;font-weight: 700;display: block;padding:0 10px;transition:all 0.3s ease}
 #header #gnb nav li a:hover {text-decoration: none;}
-#header #gnb nav li a::before{content: '';position:absolute;left:50%;bottom:0;transform: translateX(-50%);width:0px;height:2px;background: #000;transition:all 0.3s ease}
+#header #gnb nav li a::before{content: '';position:absolute;left:50%;bottom:10px;transform: translateX(-50%);width:0px;height:2px;background: #000;transition:all 0.3s ease}
 #header #gnb nav li.on a,
 #header #gnb nav li a:hover {}
 #header #gnb nav li.on a::before,
@@ -71,7 +71,7 @@
 .main-img-slide .swiper-button-next:after {content: '\2192';font-size:17px;}
 
 .main-img-slide .photo {position:relative;display:block;height:100%;text-align:center;}
-.main-img-slide .photo .img::after {content: '';position:absolute;border: 5px solid #fff;}
+
 .main-img-slide .photo img {width: 100%;max-width: 600px;}
 .main-img-slide .photo .info {height:110px;background:#fff;text-align:center;border-top: 3px solid #eee;}
 .main-img-slide .photo .info > div {padding-top:29px;text-align:center;margin:0 20px;font-family:'NanumSquare';color:#000;font-size:22px;font-weight:600;}

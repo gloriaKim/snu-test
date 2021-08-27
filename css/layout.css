@@ -5,7 +5,7 @@
 /** main - 헤더영역 **/
 #wrap {background-color: #f9f8f6;font-size:18px;}
 #skipNavi {display:none;}
-#header {margin-bottom: 50px;}
+#header {margin-bottom: 70px;}
 
 #header>.inner {padding-top: 15px;}
 #header #logo a {display:inline-block;}

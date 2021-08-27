@@ -25,6 +25,7 @@
 #header #gnb nav {display:flex;justify-content: space-evenly;}
 #header #gnb nav li {}
 #header #gnb nav li a {position:relative;line-height:60px;font-size:18px;color:#000;font-weight: 700;display: block;padding:0 10px;transition:all 0.3s ease}
+#header #gnb nav li a:hover {text-decoration: none;}
 #header #gnb nav li a::before{content: '';position:absolute;left:50%;bottom:0;transform: translateX(-50%);width:0px;height:2px;background: #000;transition:all 0.3s ease}
 #header #gnb nav li.on a,
 #header #gnb nav li a:hover {}
@@ -70,6 +71,7 @@
 .main-img-slide .swiper-button-next:after {content: '\2192';font-size:17px;}
 
 .main-img-slide .photo {position:relative;display:block;height:100%;text-align:center;}
+.main-img-slide .photo .img::after {content: '';position:absolute;border: 5px solid #fff;}
 .main-img-slide .photo img {width: 100%;max-width: 600px;}
 .main-img-slide .photo .info {height:110px;background:#fff;text-align:center;border-top: 3px solid #eee;}
 .main-img-slide .photo .info > div {padding-top:29px;text-align:center;margin:0 20px;font-family:'NanumSquare';color:#000;font-size:22px;font-weight:600;}
@@ -100,14 +102,13 @@
     border-bottom: 2px solid #585858;
     margin: 20px 15px;
     /* box-shadow: 3px 7px 5px -6px; */}
-.sub-area h4::before{content:""; display:inline-block;    width: 8px;
-    height: 8px;
+.sub-area h4::before{content:""; display:inline-block;    width: 2px;
+    height: 20px;
     margin: -3px 10px 0 0;
     vertical-align: middle;
-    border: 3px solid;}
+    border: 3px solid #37a084;}
 
-.subvisual {background: url('../img/img-trees.jpg') no-repeat center 50%;background-size: cover;height:200px;margin-bottom: 40px;}
-	
+.subvisual {background: url('../img/bg-forest.jpg') no-repeat center 0%;background-size: cover;height:300px;margin-bottom: 40px;position: relative;}
 .tit-disc {margin-bottom: 10px;font-size: 18px;font-weight: bold;}
 .tit-disc + .disc {font-size: 16px;line-height:1.8;}
 .tit-disc + .disc + .disc-img {text-align: center;padding:5% 0 10%;}
@@ -154,30 +155,35 @@
 
 /* sub page 02 : members */
 h3.h3 {overflow:hidden; position:relative;100%;}
-.section-member{padding:30px 40px; }
+.section-member{padding:30px 40px; display: flex;}
 .section-member:after{content:''; display:block; clear:both; visibility:hidden;}
-.member-img{float:left; margin-right:50px;  }
+.member-img{margin-right:50px;  }
 
 .img-wrap{width:220px; height:300px; overflow:hidden; position: relative; margin-bottom:20px; }
 .img-wrap img{position: absolute; left:50%; top:50%; transform: translate(-50%, -50%);width: 100%;}
-.img-txt .name {font-size:28px; color:#000; text-align: center; margin-right:10px; margin-bottom:10px }
+.img-txt .name {font-size:28px; color:#000; text-align: center;font-weight: 400; margin-bottom:10px }
 .img-txt p{font-size:18px; color:#949494; display: inline-block;}
 .member-img > p{font-size:15px; color:#616266;   }
-.member-txt{float:left; }
-.member-txt .tit {font-size:16px; color:#000;padding:0;font-weight: 500;}
-.member-txt .tit:after{content:""; display:block; background-color:#606060; width:100%; height:2px; margin:10px 0 25px; }
+.member-txt{width: 100%;}
+.member-txt .title {font-size:16px; color:#000;padding:0;font-weight: 600;border-bottom:1px solid #606060;padding:12px 5px 10px; margin:45px 0 30px;background: #e8e8e8;}
+/* .member-txt .tit:after{content:""; display:block; background-color:#606060; width:100%; height:2px; } */
 .member-txt ul:after{content:''; display:block; clear:both; visibility:hidden;}
 .member-txt ul{margin-bottom:35px; }
 .member-txt ul li{list-style:none; border:1px solid #545454; margin-right:10px; float: left; }
 .member-txt ul li a{text-decoration:none; padding:10px; font-size:12px; color:#545454; display:block ; }
 .member-txt ul li a i{margin-left:25px;  }
 .member-txt > p{color:#000; line-height:22px; }
+.member-txt a[href="mailto"]:hover {text-decoration:underline !important;}
+.member-txt dt {font-weight: bold;margin-bottom: 5px;}
+.member-txt dt::before {content: '';display:inline-block;width:5px;height:2px;background:#4E4E4E;vertical-align: 5px;margin-right: 10px;}
+.member-txt dd {margin-bottom: 20px;line-height: 1.5;}
 
 
 @media screen and (max-width:700px){
-	.section-member {padding-top:14px}
-	.member-img {float: none;margin-right: 0;}
-	.img-wrap {margin: 0 auto;width: 200px;height: 300px;}
+	.sub-area h4 {margin: 20px 0px;}
+	.section-member {padding:10px 0px;display:inherit}
+	.member-img {margin-right: 0;}
+	.img-wrap {margin: 0 auto;width: 40%;max-width:160px;height: 220px;}
 }
 
 

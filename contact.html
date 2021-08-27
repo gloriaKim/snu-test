@@ -63,9 +63,27 @@
 	<article id="container">
 		<div class="inner">
 			<h3><span>CONTACT</span></h3>
+
+
+
+<!-- * 카카오맵 - 지도퍼가기 -->
+<!-- 1. 지도 노드 -->
+<div id="daumRoughmapContainer1630068909598" class="root_daum_roughmap root_daum_roughmap_landing"></div>
+
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
+
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1630068909598",
+		"key" : "27654",
+		"mapWidth" : "100%",
+		"mapHeight" : "360"
+	}).render();
+</script>
+
+
 			
-			<!-- 지도를 표시할 div 입니다 -->
-			<div id="map"></div>
 
 			<article class="location-info-box">
 				<div class="in">
@@ -113,11 +131,12 @@
 							</dl>
 						</li> 
 					</ul>
-					<a href="https://goo.gl/maps/AsCwdgBLEVmKovXP8" target="_blank" class="location-btn"><span>Go to Google Map</span></a>
+					<a href="https://goo.gl/maps/vwUPveAkoFUfJAyK8" target="_blank" class="location-btn"><span>Go to Google Map</span></a>
+					<a href="https://goo.gl/maps/R3Xprp67rEKwmq3JA" target="_blank" class="location-btn version2"><span>Go to Google Map</span></a>
 				</div>
 			</article>
 			
-			<!-- 지도 관련 js -->
+			<!-- 지도 관련 js
 			<div id="clickLatlng"></div>
 			<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=74cdc2b1365c7309052bd00976441b37&libraries=services"></script>
 			<script>
@@ -161,7 +180,7 @@
 						} 
 							
 					});    
-			</script>
+			</script> -->
 		</div>
 
 	</article>

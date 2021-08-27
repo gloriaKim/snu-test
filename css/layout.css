@@ -7,8 +7,8 @@
 #skipNavi {display:none;}
 #header {margin-bottom: 50px;}
 
-#header>.inner {padding-top: 15px;}
-#header #logo a {display:inline-block;}
+#header>.inner {}
+#header #logo a {display:inline-block;padding:15px 0;}
 #header #logo img {max-height: 75px;}
 #header #logo + p {margin:12px 0 15px;font-weight: 400;}
 #header .search {position:absolute;left:0;top:27px;width:252px;}
@@ -64,7 +64,7 @@
 .main-img-slide .swiper-button-prev,
 .main-img-slide .swiper-container-rtl .swiper-button-next,
 .main-img-slide .swiper-button-next,
-.main-img-slide .swiper-container-rtl .swiper-button-prev {border:1px solid #ccc;width:47px;height:47px;color:#000;}
+.main-img-slide .swiper-container-rtl .swiper-button-prev {border:1px solid #ccc;width:47px;height:47px;color:#000;background: #fff;}
 .main-img-slide .swiper-button-prev {left: 0;}
 .main-img-slide .swiper-button-next {right: 0;}
 .main-img-slide .swiper-button-prev:after {content: '\2190';font-size:17px;}
@@ -198,7 +198,7 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 .member-txt ul li{list-style:none; border:1px solid #545454; margin-right:10px; float: left; }
 .member-txt ul li a{text-decoration:none; padding:10px; font-size:12px; color:#545454; display:block ; }
 .member-txt ul li a i{margin-left:25px;  }
-.member-txt > p{color:#000; line-height:22px; }
+.member-txt > p{color:#000; line-height:22px; line-height: 1.4;}
 .member-txt a[href="mailto"]:hover {text-decoration:underline !important;}
 .member-txt dt {font-weight: bold;margin-bottom: 5px;}
 .member-txt dt::before {content: '';display:inline-block;width:5px;height:2px;background:#4E4E4E;vertical-align: 5px;margin-right: 10px;}
@@ -222,14 +222,14 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 
 /* sub page 05 : Location -------- */
 #map {width: 70%;margin:0 auto;height:350px;}
-.location-info-box {padding: 35px 250px 35px 80px; border-bottom:3px solid #131313; position:relative;}
+.location-info-box {padding: 35px 300px 35px 80px; border-bottom:3px solid #131313; position:relative;}
 .location-info-box .location-info-list {font-size:16px; line-height:2.375em;}
 .location-info-box .location-info-list dt {float:left; width:23%; min-width:90px; }
 .location-info-box .location-info-list dd {float:left; width:77%;}
 .location-info-box .location-info-list .icon {display:inline-block; margin-right:15px;}
 .location-info-box .location-info-list .tit {color: #212121; display:inline-block;}
 .location-info-box .location-info-list .txt {color: #424242;}
-.location-info-box .location-btn {position:absolute; right:47px; top:50%; margin-top:-28px;}
+.location-info-box .location-btn {position:absolute; right:90px; top:48px; }
 .location-btn {width:194px; height:56px; background-color: #212121; text-align:center; color:#fff; display:block; position:relative; }
 .location-btn:before {content:""; width:100%; height: 3px; background-color: rgba(33,33,33,0.25); position:absolute; left:0; bottom:-3px;}
 .location-btn span {font-size:14px; letter-spacing:-0.5px; line-height: 56px; display:block;}

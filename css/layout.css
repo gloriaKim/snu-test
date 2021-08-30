@@ -91,7 +91,7 @@
 
 @media screen and (max-width:720px){
 	.main-img-slide {width: 100%;}
-	.main-img-slide .photo img {width:100%;}
+	.main-img-slide .photo img {max-height:300px}
 }
 
 /* SUB */

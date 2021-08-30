@@ -166,7 +166,7 @@
 /* sub page 01 : research */
 .img-activity-list-con li{float:left; width:30.83%; margin:0 1.25% 20px;}
 .img-activity-list-con li .img-thumb{display:block; height:100%;  position:relative; border:1px solid #e5e5e5;}
-.img-activity-list-con li .img-info-box{padding-top:28px;}
+.img-activity-list-con li .img-info-box{padding-top:40px;}
 .img-activity-list-con li .img-info-box dt{font-size:26px; font-weight:600; letter-spacing:-0.75px; margin-bottom:14px}
 .img-activity-list-con li .img-info-box dd{ line-height:1.5;text-align: justify;}
 .img-cover{width:100%;padding: 10px;background: #fff;}
@@ -182,7 +182,7 @@
 	.img-intro-txt{font-size:15px; padding:0 15px;}
 	.img-activity-list-con{ margin:0px auto;}
 	.img-activity-list-con li{float:none; width:auto; margin-bottom:20px;}
-	.img-activity-list-con li .img-info-box{padding-top:15px;}
+	.img-activity-list-con li .img-info-box{padding-top:30px;}
 }
 
 /* sub page 02 : members */
@@ -228,7 +228,7 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 .publicate-list li {color: #000;overflow: hidden;position: relative;border-top: 1px solid rgba(0,0,0,.3);padding: 10px 15px;width: 100%;font-size: 18px;background-color: #ececec;}	
 .publicate-list .number-square {float: left;width: 30px;    margin-right: 10px;}
 .publicate-list li p.title {float: left;width:calc(100% - 40px);line-height: 1.8;font-weight: 400;}
-.publicate-list li p.author {text-align: right;font-weight: normal;padding-top: 10px;clear: both;}
+.publicate-list li p.author {text-align: right;font-weight: normal;padding-top: 20px;clear: both;}
 .publicate-list li p i {font-weight: 400;}
 .publicate-list a {margin-top: 15px;float: right;}
 

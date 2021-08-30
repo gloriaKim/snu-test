@@ -72,7 +72,7 @@
 .main-img-slide .swiper-button-prev:after {content: '\2190';font-size:17px;}
 .main-img-slide .swiper-button-next:after {content: '\2192';font-size:17px;}
 
-.main-img-slide .photo {position:relative;display:block;height:100%;text-align:center;}
+.main-img-slide .photo {position:relative;display:block;height:100%;text-align:center;overflow:hidden}
 .main-img-slide .photo img {max-height: 400px;}
 .main-img-slide .photo .info {height:110px;background:#fff;text-align:center;border-top: 3px solid #eee;}
 .main-img-slide .photo .info > div {padding-top:29px;text-align:center;margin:0 20px;font-family:'NanumSquare';color:#000;font-size:22px;font-weight:600;}

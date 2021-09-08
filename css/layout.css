@@ -149,7 +149,9 @@
 
 @media screen and (max-width:799px){
 	.inner {position:relative;max-width:100%;margin:0 auto;padding:0 3%}
-	#header #logo + p {margin: 10px 0 15px;}
+	#header #logo img {width: 80%;}
+	.sub-area h3 {font-size: 22px;}
+	#footer * {font-size: 15px;}
 }
 
 @media screen and (max-width:900px){
@@ -215,14 +217,16 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 
 
 @media screen and (max-width:700px){
-	.sub-area h4 {margin: 20px 0px;}
+	.sub-area h4 {margin: 20px 0px;border-width: 1px;font-weight: 500;}
 	.section-member {padding:10px 0px;display:inherit}
 	.section-member.investigator .member-img {margin-bottom: 30px;}
 	.section-member.student {padding: 20px 0px;}
 	.section-member.student .member-txt .name {margin-top: 0;text-align: center;}
 	.section-member + hr {margin: 30px 0;}
 	.member-img {margin-right: 0;}
-	.img-wrap {margin: 0 auto;width: 40%;max-width:160px;height: 220px;}
+	.section-member .name {    font-size: 21px;}
+	.img-wrap {margin: 0 auto;width: 40%;max-width:160px;height: 200px;}
+	.member-txt {font-size: 0.9em;}
 }
 
 
@@ -259,6 +263,7 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 @media screen and (max-width:850px){
 	.location-info-box {padding: 35px 10px 35px !important;}
 	.location-info-box .location-btn {width: 100%;margin-top: 50px;position: inherit;right: inherit;top:inherit;}
+	
 }
 
 

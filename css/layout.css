@@ -253,7 +253,7 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 .location-btn span {font-size:14px; letter-spacing:-0.5px; line-height: 46px; display:block;}
 .location-btn span:after {content:"+"; margin-left: 10px;}
 .location-btn.version2 {right:90px; top:130px;}
-.root_daum_roughmap {width:70%;margin:0 auto;}
+.root_daum_roughmap {width:70% !important;margin:0 auto !important;}
 @media screen and (max-width:1180px){
 	.location-info-box .location-info-list dt {float:none;width:100%}
 	.location-info-box .location-info-list dd {float:none;width:100%}
@@ -263,7 +263,7 @@ h3.h3 {overflow:hidden; position:relative;100%;}
 @media screen and (max-width:850px){
 	.location-info-box {padding: 35px 10px 35px !important;}
 	.location-info-box .location-btn {width: 100%;margin-top: 50px;position: inherit;right: inherit;top:inherit;}
-	.root_daum_roughmap {width:85%;}
+	.root_daum_roughmap {width:70% !important;}
 	
 }
 
